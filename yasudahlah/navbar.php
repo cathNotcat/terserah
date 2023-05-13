@@ -1,3 +1,7 @@
+<?php
+session_start();
+require 'connect.php';
+?>
 <nav class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0">
     <a href="" class="navbar-brand p-0">
         <img src="img/logo_white.png" alt="Logo" style="width:200%">
@@ -26,8 +30,14 @@
         </div>
         <!-- <butaton type="button" class="btn text-secondary ms-3" data-bs-toggle="modal" data-bs-target="#searchModal"><i
                 class="fa fa-search"></i></butaton> -->
-        <a href="./login" id="login" class="btn btn-login py-2 px-4 ms-3" style="border-color: #e65c4f">Login</a>
-        <a href="./register" class="btn btn-register py-2 px-4 ms-3">Register</a>
+        <?php
+        if (isset($_SESSION["id"])) {
+            echo ("");
+        } else {
+            echo '<a href="./login" id="login" class="btn btn-login py-2 px-4 ms-3" style="border-color: #e65c4f">Login</a>';
+            echo '<a href="./register" class="btn btn-register py-2 px-4 ms-3">Register</a>';
+        }
+        ?>
     </div>
 </nav>
 
