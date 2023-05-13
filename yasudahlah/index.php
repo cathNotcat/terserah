@@ -75,27 +75,6 @@
     </div>
     <!-- Navbar & Hero End -->
 
-    <!-- Full Screen Search Start -->
-    <div class="modal fade" id="searchModal" tabindex="-1">
-      <div class="modal-dialog modal-fullscreen">
-        <div class="modal-content" style="background: rgba(29, 40, 51, 0.8)">
-          <div class="modal-header border-0">
-            <button type="button" class="btn bg-white btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body d-flex align-items-center justify-content-center">
-            <div class="input-group" style="max-width: 600px">
-              <input type="text" class="form-control bg-transparent border-light p-3"
-                placeholder="Type search keyword" />
-              <button class="btn btn-light px-4">
-                <i class="bi bi-search"></i>
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- Full Screen Search End -->
-
     <!-- Desc Start -->
     <div class="container-xxl py-5">
       <div class="container px-lg-5">
@@ -167,10 +146,9 @@
               <div class="text-center border-bottom p-4 pt-5">
                 <h4 class="fw-bold">Kumpul Sampah</h4>
                 <p class="mb-0">
-                  Buanglah sampah pada tempat yang sudah disediakan yang berada pada ...
+                  Buanglah sampah pada tempat yang sudah disediakan pada mall, sekolah, hingga pantai.
                 </p>
               </div>
-
             </div>
           </div>
           <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.4s">
@@ -183,7 +161,7 @@
               <div class="text-center border-bottom p-4 pt-5">
                 <h4 class="fw-bold">Tunjuk Barcode</h4>
                 <p class="mb-0">
-                  Tunjukkan barcode pada ponsel dengan cara klik profile dan show barcode.
+                  Tunjukkan barcode pada ponsel dengan cara klik profile kemudian klik barcode.
                 </p>
               </div>
             </div>
@@ -229,7 +207,7 @@
         <div class="section-title position-relative text-center mx-auto mb-5 pb-4 wow fadeInUp" data-wow-delay="0.1s"
           style="max-width: 600px">
           <h1 class="mb-3">Daftar Sekarang!</h1>
-          <a href="" class="btn btn-lg btn-register my-4 py-2 px-4 ms-3">Register</a>
+          <a href="register" class="btn btn-lg btn-register my-4 py-2 px-4 ms-3">Register</a>
         </div>
       </div>
     </div>
@@ -295,10 +273,7 @@
               </div>
             </div>
           </div>
-
         </div>
-
-
 
         <div class="container px-lg-5">
           <div class="copyright">

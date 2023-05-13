@@ -45,15 +45,22 @@
     <script src="//code.jquery.com/jquery-latest.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/jsbarcode@3.11.5/dist/JsBarcode.all.min.js"></script>
     <style>
+        body {
+            overflow: hidden;
+            min-height: 85vh;
+            background: linear-gradient(#A1D1E2, #E9EEF2);
+        }
+
         .wrapper {
-            width: 360px;
+            background-color: #E9EEF2;
+            width: 400px;
             padding: 20px;
             margin: 0 auto;
             border-style: solid;
-            padding: -2px;
-            margin-top: 65px;
-            margin-bottom: 8px;
             border-radius: 20px;
+            padding: -2px;
+            margin-top: 8%;
+            margin-bottom: 8px;
         }
     </style>
 </head>
@@ -125,14 +132,9 @@ require 'connect.php';
         </div>
         <div>
             <!-- <svg id = "barcode"></svg> -->
-
         </div>
     </div>
-
     </div>
-
-
-
 </body>
 
 </html>

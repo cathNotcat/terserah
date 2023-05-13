@@ -1,6 +1,8 @@
 <?php
 session_start();
 require 'connect.php';
+
+
 ?>
 <nav class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0">
     <a href="" class="navbar-brand p-0">
@@ -12,27 +14,39 @@ require 'connect.php';
     <div class="collapse navbar-collapse" id="navbarCollapse">
         <div class="navbar-nav ms-auto py-0">
             <a href="index.php" id="home" class="nav-item nav-link active nv">Home</a>
-            <!-- <a href="about.html" class="nav-item nav-link">About</a>
-                        <a href="domain.html" class="nav-item nav-link">Domain</a>
-                        <a href="hosting.html" class="nav-item nav-link">Hosting</a> -->
-            <!-- <div class="nav-item dropdown">
-                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
-                            <div class="dropdown-menu m-0">
-                                <a href="team.html" class="dropdown-item">Our Team</a>
-                                <a href="testimonial.html" class="dropdown-item">Testimonial</a>
-                                <a href="comparison.html" class="dropdown-item">Comparison</a>
-                            </div>
-                        </div> -->
-            <a href="#contact" id="contact" type="button" data-bs-toggle="modal" data-bs-target="#beliModal"
+            <a href="" id="contact" type="button" data-bs-toggle="modal" data-bs-target="#beliModal"
                 class="nav-item nav-link nv">Shop</a>
-            <a href="#contact" id="contact" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal"
+            <a href="" id="contact" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal"
                 class="nav-item nav-link nv">Contact</a>
         </div>
-        <!-- <butaton type="button" class="btn text-secondary ms-3" data-bs-toggle="modal" data-bs-target="#searchModal"><i
-                class="fa fa-search"></i></butaton> -->
+
         <?php
         if (isset($_SESSION["id"])) {
-            echo ("");
+            $sql = "SELECT * FROM member WHERE email = '{$_SESSION['id']}'";
+
+            $res1 = mysqli_query($con, $sql);
+            $row = mysqli_fetch_array($res1);
+            ?>
+            <div class="dropdown">
+                <span class="bi bi-person-circle ms-4 text-secondary dropdown-toggle" style="font-size:30px">
+                    <span class="" style="font-size:20px;">
+                        <?php echo $row['nama']; ?>
+                    </span>
+                </span>
+
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" type="button" data-bs-toggle="modal" data-bs-target="#profile"
+                            href="">Profile</a></li>
+                    <li><a class="dropdown-item" href="#">Barcode</a></li>
+                    <li>
+                        <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item" href="logout.php">Logout</a></li>
+                </ul>
+            </div>
+
+
+            <?php
         } else {
             echo '<a href="./login" id="login" class="btn btn-login py-2 px-4 ms-3" style="border-color: #e65c4f">Login</a>';
             echo '<a href="./register" class="btn btn-register py-2 px-4 ms-3">Register</a>';
@@ -44,7 +58,7 @@ require 'connect.php';
 <!-- Button trigger modal -->
 
 
-<!-- Modal kontak-->
+<!-- Modal kontak START-->
 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog">
         <div class="bg-light modal-content">
@@ -65,7 +79,9 @@ require 'connect.php';
         </div>
     </div>
 </div>
+<!-- MODAL KONTAK END -->
 
+<!-- MODAL BELI START -->
 <div class="modal fade" id="beliModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog">
         <div class="bg-light modal-content">
@@ -97,6 +113,63 @@ require 'connect.php';
         </div>
     </div>
 </div>
+<!-- MODAL BELI END -->
+
+<!-- MODAL PROFILE START -->
+<div class="modal fade" id="profile" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="bg-light modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Beli Disini!</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <h2 style="text-align: center;">Profile</h2>
+                <div class="mb-3">
+                    <label class="form-label">Nama</label>
+                    <input type="text" readonly class="form-control" name="nama" id="nama"
+                        placeholder="<?php echo $row['nama']; ?>" required>
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label">Tanggal Lahir</label>
+                    <div class="input-group date" id="tglLahir">
+                        <input type="text" class="form-control" name="tanggal" id="tanggal"
+                            placeholder="<?php echo $row['tanggal_lahir']; ?>" required readonly>
+                    </div>
+
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Nomor Telepon</label>
+                    <input type="text" class="form-control" name="nomor" id="nomor"
+                        placeholder="<?php echo $row['no_telp']; ?>" required readonly>
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputEmail1">Email</label>
+                    <input type="email" class="form-control" name="email" id="email" required
+                        aria-describedby="emailHelp" placeholder="<?php echo $row['email']; ?>" readonly>
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label">Password</label>
+                    <input type="password" class="form-control" name="password" id="password"
+                        value="<?php echo $row['password']; ?>" required readonly>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Barcode</label>
+
+                    <br>
+                    <svg id="barcode"></svg>
+                    <script>
+                        generateBarcode(<?php echo $row['barcodeNumber']; ?>);
+                // generateBarcode('2147483647');
+                    </script>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- MODAL PROFILE END -->
 
 
 <!-- JavaScript Libraries -->
