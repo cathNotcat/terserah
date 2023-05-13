@@ -21,6 +21,7 @@
                             </div>
                         </div> -->
             <a href="#contact" class="nav-item nav-link">Sebagai UMKM</a>
+            <a href="beli.php" class="nav-item nav-link">Beli</a>
             <a href="#contact" class="nav-item nav-link">Contact</a>
         </div>
         <butaton type="button" class="btn text-secondary ms-3" data-bs-toggle="modal" data-bs-target="#searchModal"><i
