@@ -94,14 +94,16 @@
               <input type="email" class="form-control border-0 py-2 mb-2 mt-3" placeholder="Email" />
               <textarea class="form-control border-0 mb-2 mt-3" rows="3" placeholder="Alamat"></textarea>
 
-              <input min="1" max="100" type="number" id="typeNumber" class="form-control"
+              <input min="1" max="100" type="number" id="typeNumber" class="form-control border-0 py-2 mb-2 mt-3"
                 placeholder="Masukan berat per-gram" />
-              <label class="form-label" for="typeNumber"></label>
-              <span>Metode pembayaran</span>
-              <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-              <label class="form-check-label" for="flexRadioDefault1">e-Payment</label>
-              <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-              <label class="form-check-label" for="flexRadioDefault1">COD</label>
+              <label class="form-control border-0 py-2 mb-2 mt-3" for="typeNumber"></label>
+
+              <div class="form-control border-0 py-2 mb-2 mt-3">Metode pembayaran
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                <label class="form-check-label" for="flexRadioDefault1">e-Payment</label>
+                <input class="form-check-input mt-3" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                <label class="form-check-label" for="flexRadioDefault1">COD</label>
+              </div>
 
 
 

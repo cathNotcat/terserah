@@ -19,7 +19,8 @@
                                 <a href="comparison.html" class="dropdown-item">Comparison</a>
                             </div>
                         </div> -->
-            <a href="beli.php" class="nav-item nav-link">Beli</a>
+            <a href="#contact" id="contact" type="button" data-bs-toggle="modal" data-bs-target="#beliModal"
+                class="nav-item nav-link nv">Shop</a>
             <a href="#contact" id="contact" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal"
                 class="nav-item nav-link nv">Contact</a>
         </div>
@@ -33,7 +34,7 @@
 <!-- Button trigger modal -->
 
 
-<!-- Modal -->
+<!-- Modal kontak-->
 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog">
         <div class="bg-light modal-content">
@@ -48,6 +49,38 @@
                         <input type="email" class="form-control border-0 py-2 mb-2 mt-3" placeholder="Email" />
                         <textarea class="form-control border-0 mb-2 mt-3" rows="3" placeholder="Pesan"></textarea>
                         <button class="btn btn-register w-100 py-2 mt-3">Kirim</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="beliModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="bg-light modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Beli Disini!</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form method="post">
+                    <div class="rounded" style="padding: 30px">
+                        <input type="text" class="form-control border-0 py-2 mb-2 mt-3" placeholder="Nama" />
+                        <input type="email" class="form-control border-0 py-2 mb-2 mt-3" placeholder="Email" />
+                        <textarea class="form-control border-0 mb-2 mt-3" rows="3" placeholder="Alamat"></textarea>
+
+                        <input min="1" max="100" type="number" id="typeNumber"
+                            class="form-control border-0 py-2 mb-2 mt-3" placeholder="Masukan berat per-gram" />
+                        <!-- <label class="form-control border-0 py-2 mb-2 mt-3" for="typeNumber"></label> -->
+                        <div class="form ml-3 mt-3">Metode pembayaran
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                            <label class="form-check-label" for="flexRadioDefault1">e-Payment</label>
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                            <label class="form-check-label" for="flexRadioDefault1">COD</label>
+
+                        </div>
+                        <button class="btn btn-register w-100 py-2 mt-3">Pesan</button>
                     </div>
                 </form>
             </div>
