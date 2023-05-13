@@ -244,12 +244,15 @@
               <div class="container px-lg-5">
                 <div class=" position-relative text-center mx-auto" data-wow-delay="0.1s" style="max-width: 600px">
                   <h1 class="mb-5 text-white">Kritik dan Saran</h1>
-                  <div class="bg-light rounded" style="padding: 30px">
-                    <input type="text" class="form-control border-0 py-2 mb-2 mt-3" placeholder="Nama" />
-                    <input type="email" class="form-control border-0 py-2 mb-2 mt-3" placeholder="Email" />
-                    <textarea class="form-control border-0 mb-2 mt-3" rows="3" placeholder="Pesan"></textarea>
-                    <button class="btn btn-register w-100 py-2 mt-3">Kirim</button>
-                  </div>
+                  <form method="post">
+                    <div class="bg-light rounded" style="padding: 30px">
+                      <input type="text" class="form-control border-0 py-2 mb-2 mt-3" placeholder="Nama" />
+                      <input type="email" class="form-control border-0 py-2 mb-2 mt-3" placeholder="Email" />
+                      <textarea class="form-control border-0 mb-2 mt-3" rows="3"
+                        placeholder="Kritik atau saran"></textarea>
+                      <button class="btn btn-register w-100 py-2 mt-3">Kirim</button>
+                    </div>
+                  </form>
                 </div>
               </div>
             </div>
@@ -314,17 +317,7 @@
     <a href="#" class="btn btn-lg btn-secondary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
   </div>
 
-  <!-- JavaScript Libraries -->
-  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="lib/wow/wow.min.js"></script>
-  <script src="lib/easing/easing.min.js"></script>
-  <script src="lib/waypoints/waypoints.min.js"></script>
-  <script src="lib/counterup/counterup.min.js"></script>
-  <script src="lib/owlcarousel/owl.carousel.min.js"></script>
 
-  <!-- Template Javascript -->
-  <script src="js/main.js"></script>
 </body>
 
 </html>

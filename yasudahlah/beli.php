@@ -49,11 +49,11 @@
       <?php include('navbar.php') ?>
 
       <div class="container-xxl py-5 bg-primary hero-header mb-5">
-        <!-- <div class="container my-5 py-5 px-lg-5">
+        <div class="container my-5 py-5 px-lg-5">
           <div class="row g-5">
-            
+
           </div>
-        </div> -->
+        </div>
       </div>
     </div>
     <!-- Navbar & Hero End -->
@@ -84,30 +84,31 @@
     <section id="contact">
       <div class="container-fluid bg-primary text-white footer mt-5 pt-5 fadeIn" data-wow-delay="0.1s">
         <!-- <div class="container py-5 px-lg-5"> -->
-          <!-- <div class="row gy-5 gx-4 pt-5"> -->
-            <!-- <div class="container-xxl py-5 mt-5"> -->
-              <div class="container px-lg-5">
-                <div class=" position-relative text-center mx-auto" data-wow-delay="0.1s" style="max-width: 600px">
-                  <h1 class="mb-5 text-white">Pesan Disini!</h1>
-                  <div class="bg-light rounded" style="padding: 30px">
-                    <input type="text" class="form-control border-0 py-2 mb-2 mt-3" placeholder="Nama" />
-                    <input type="email" class="form-control border-0 py-2 mb-2 mt-3" placeholder="Email" />
-                    <textarea class="form-control border-0 mb-2 mt-3" rows="3" placeholder="Alamat"></textarea>
-                 
-                    <input min="1" max="100" type="number" id="typeNumber" class="form-control" placeholder="Masukan berat per-gram" />
-                    <label class="form-label" for="typeNumber"></label>
-                    <span>Metode pembayaran</span>
-                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                    <label class="form-check-label" for="flexRadioDefault1">e-Payment</label>
-                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                    <label class="form-check-label" for="flexRadioDefault1">COD</label>
+        <!-- <div class="row gy-5 gx-4 pt-5"> -->
+        <!-- <div class="container-xxl py-5 mt-5"> -->
+        <div class="container px-lg-5">
+          <div class=" position-relative text-center mx-auto" data-wow-delay="0.1s" style="max-width: 600px">
+            <h1 class="mb-5 text-white">Pesan Disini!</h1>
+            <div class="bg-light rounded" style="padding: 30px">
+              <input type="text" class="form-control border-0 py-2 mb-2 mt-3" placeholder="Nama" />
+              <input type="email" class="form-control border-0 py-2 mb-2 mt-3" placeholder="Email" />
+              <textarea class="form-control border-0 mb-2 mt-3" rows="3" placeholder="Alamat"></textarea>
+
+              <input min="1" max="100" type="number" id="typeNumber" class="form-control"
+                placeholder="Masukan berat per-gram" />
+              <label class="form-label" for="typeNumber"></label>
+              <span>Metode pembayaran</span>
+              <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+              <label class="form-check-label" for="flexRadioDefault1">e-Payment</label>
+              <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+              <label class="form-check-label" for="flexRadioDefault1">COD</label>
 
 
-                               
-                    <button class="btn btn-register w-100 py-2 mt-3">Pesan</button>
-                  </div>
-                <!-- </div> -->
-              <!-- </div> -->
+
+              <button class="btn btn-register w-100 py-2 mt-3">Pesan</button>
+            </div>
+            <!-- </div> -->
+            <!-- </div> -->
             <!-- </div> -->
           </div>
 
