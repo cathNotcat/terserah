@@ -63,11 +63,11 @@
                 <span>$2.49</span>
                 <small class="align-bottom fw-normal" style="font-size: 15px; line-height: 33px">/ Mo</small>
               </h1> -->
-              <a href="" class="btn btn-info py-sm-3 px-sm-5 me-3 animated slideInLeft">Informasi lebih lanjut <span
-                  class="bi bi-box-arrow-up-right ms-2"></span> </a>
+              <a href="" class="btn btn-info py-sm-3 px-sm-5 me-3 mt-2 animated slideInLeft">Informasi lebih lanjut
+                <span class="bi bi-box-arrow-up-right ms-2"></span> </a>
             </div>
             <div class="col-lg-6 text-center text-lg-start">
-              <img class="img-fluid animated zoomIn" src="img/hero.png" alt="" />
+              <img class="img-fluid animated zoomIn" src="img/hero1.png" alt="" />
             </div>
           </div>
         </div>
@@ -96,9 +96,7 @@
     </div>
     <!-- Full Screen Search End -->
 
-
-
-    <!-- About Start -->
+    <!-- Desc Start -->
     <div class="container-xxl py-5">
       <div class="container px-lg-5">
         <div class="row g-5 align-items-center">
@@ -138,14 +136,14 @@
             </div>
           </div>
           <div class="col-lg-5">
-            <img class="img-fluid wow zoomIn" data-wow-delay="0.5s" src="img/about.png" />
+            <img class="img-fluid wow zoomIn" data-wow-delay="0.5s" src="img/about1.png" />
           </div>
         </div>
       </div>
     </div>
-    <!-- About End -->
+    <!-- Desc End -->
 
-    <!-- Pricing Start -->
+    <!-- About Start -->
     <div class="container-xxl py-5">
       <div class="container px-lg-5">
         <div class="section-title position-relative text-center mx-auto mb-5 pb-4 wow fadeInUp" data-wow-delay="0.1s"
@@ -223,7 +221,93 @@
         </div>
       </div>
     </div>
-    <!-- Pricing End -->
+    <!-- About End -->
+
+    <!-- Ajakan Start -->
+    <div class="container-xxl py-5 mt-5">
+      <div class="container px-lg-5">
+        <div class="section-title position-relative text-center mx-auto mb-5 pb-4 wow fadeInUp" data-wow-delay="0.1s"
+          style="max-width: 600px">
+          <h1 class="mb-3">Daftar Sekarang!</h1>
+          <a href="" class="btn btn-lg btn-register my-4 py-2 px-4 ms-3">Register</a>
+        </div>
+      </div>
+    </div>
+    <!-- Ajakan End -->
+
+    <!-- Footer Start -->
+    <section id="contact">
+      <div class="container-fluid bg-primary text-white footer mt-5 pt-5 fadeIn" data-wow-delay="0.1s">
+        <div class="container py-5 px-lg-5">
+          <div class="row gy-5 gx-4 pt-5">
+            <div class="container-xxl py-5 mt-5">
+              <div class="container px-lg-5">
+                <div class=" position-relative text-center mx-auto" data-wow-delay="0.1s" style="max-width: 600px">
+                  <h1 class="mb-5 text-white">Kritik dan Saran</h1>
+                  <div class="bg-light rounded" style="padding: 30px">
+                    <input type="text" class="form-control border-0 py-2 mb-2 mt-3" placeholder="Nama" />
+                    <input type="email" class="form-control border-0 py-2 mb-2 mt-3" placeholder="Email" />
+                    <textarea class="form-control border-0 mb-2 mt-3" rows="3" placeholder="Pesan"></textarea>
+                    <button class="btn btn-register w-100 py-2 mt-3">Kirim</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row gy-5 gx-4 pt-5">
+            <div class="col-md-4">
+              <h5 class="fw-bold text-white mb-4">Tentang kita</h5>
+              <a class="btn btn-link" href="">About Us</a>
+              <a class="btn btn-link" href="">Contact Us</a>
+              <a class="btn btn-link" href="">Privacy Policy</a>
+              <a class="btn btn-link" href="">Terms & Condition</a>
+              <a class="btn btn-link" href="">Support</a>
+            </div>
+            <div class="col-md-4">
+              <h5 class="fw-bold text-white mb-4">Our Services</h5>
+              <a class="btn btn-link" href="">Domain Register</a>
+              <a class="btn btn-link" href="">Shared Hosting</a>
+              <a class="btn btn-link" href="">VPS Hosting</a>
+              <a class="btn btn-link" href="">Dedicated Hosting</a>
+              <a class="btn btn-link" href="">Reseller Hosting</a>
+            </div>
+            <div class="col-md-4">
+              <h5 class="fw-bold text-white mb-4">Get In Touch</h5>
+              <p class="mb-2">
+                <i class="fa fa-map-marker-alt me-3"></i>123 Street, New York,
+                USA
+              </p>
+              <p class="mb-2">
+                <i class="fa fa-phone-alt me-3"></i>+012 345 67890
+              </p>
+              <p class="mb-2">
+                <i class="fa fa-envelope me-3"></i>info@example.com
+              </p>
+              <div class="d-flex pt-2">
+                <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
+                <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a>
+                <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-youtube"></i></a>
+                <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-linkedin-in"></i></a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+
+
+        <div class="container px-lg-5">
+          <div class="copyright">
+            <div class="row">
+              <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                &copy; 2023 Yasudahlah
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
     <!-- Footer End -->
 
     <!-- Back to Top -->
