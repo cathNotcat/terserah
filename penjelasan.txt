@@ -1,0 +1,67 @@
+MOELOENG/ MULUNG / ULUNG /
+
+
+Jadi kita nyedian pick up di mall misalnya, nah mall ini pasti mau soalnya juga jadi isa ningkatin citranya di mata masyarakat.  Dengan adanya pick up ini masyarakat isa naruh food wastenya nanti 
+ kita buat tempat2 pick
+
+Hitungannya per gram 
+Lokasi: daerah minimarket (indomaret, pasar, mall, sekolah, univ, tempat atraksi, pantai)
+
+Fitur:
+Akun
+Informasi
+Barcode (random) dan ID 
+
+
+
+
+Customer segments:
+Sisi yang kasi sampah: pemulung, masyarakat umum
+Sisi yang ngambil sampah: pekerja tetap, pemerintahan
+
+Problem: 
+Banyaknya sampah plastik di Indonesia
+Indonesia merupakan negara penyumbang sampah plastik terbesar
+Kurangnya pengelolahan sampah plastik
+Sampah plastik susah buat didaur ulang
+Agar perekonomian Indonesia mengalir lebih efektif
+Anggaran negara untuk membersihkan sampah… dipindahkan ke lainnya (?)
+
+Revenue streams:
+Menjual sampah plastik yang telah terkumpul
+
+
+Solution:
+Mengelola limbah sampah dengan cara mengumpulkannya
+
+Membuka lapangan pekerjaan tetap bagi pemulung
+
+Mendistribusikan bahan baku untuk produksi bagi UMKM
+  
+
+Unique value proposition:
+
+
+
+Channels:
+Kerja sama dengan pemerintah
+Pemerintah sosialisasi ke masyarakat tentang penggunaan aplikasi…
+Kerja sama dengan tempat drop point (minimarket, pasar, mall, sekolah, univ, tempat atraksi, pantai)
+	… supaya lokasi pembuangan terjangkau oleh masyarakat
+
+
+Key metrics:
+Akun yang teregistrasi
+Jumlah sampah yang terkumpul per bulan
+Jumlah sampah yang terjual per bulan
+
+Cost structure:
+Biaya akuisisi pelanggan
+Hosting website
+Tenaga Kerja
+
+Unfair advantage:
+Easy Money
+Orang bisa dapat uang hanya dengan mengumpulkan dan menaruh sampah pada tempat yg sudah disediakan
+
+
