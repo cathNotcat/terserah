@@ -200,9 +200,9 @@ h6,
         url(../img/bg-line.png),
         url(../img/bg-bottom-hero.png);
     background-position:
-        0px 40%,
-        right 0 top 0,
-        left 50% top 0,
+        0px 80%,
+        right 0 top 50px,
+        left 40% top 0,
         left 50% top 50%,
         center bottom -1px;
     background-repeat: no-repeat;
@@ -246,94 +246,6 @@ h6,
     margin-left: -60px;
 }
 
-
-/*** Domain Search ***/
-.domain {
-    background: url(../img/bg-domain.png) center center no-repeat;
-    background-size: contain;
-}
-
-
-/*** Comparison ***/
-@media (min-width: 992px) {
-    .comparison::after {
-        position: absolute;
-        content: "";
-        width: 1px;
-        top: 56px;
-        bottom: 20px;
-        left: 50%;
-        background: #DDDDDD;
-    }
-}
-
-
-/*** Testimonial ***/
-.testimonial-carousel .owl-item .testimonial-item,
-.testimonial-carousel .owl-item.center .testimonial-item * {
-    transition: .5s;
-}
-
-.testimonial-carousel .owl-item.center .testimonial-item {
-    background: var(--primary) !important;
-    border-color: var(--secondary) !important;
-}
-
-.testimonial-carousel .owl-item.center .testimonial-item .position-absolute {
-    background: var(--secondary) !important;
-}
-
-.testimonial-carousel .owl-item.center .testimonial-item * {
-    color: #FFFFFF;
-}
-
-.testimonial-carousel .owl-item.center .testimonial-item h6 {
-    color: var(--dark) !important;
-}
-
-.testimonial-carousel .owl-dots {
-    display: flex;
-    align-items: flex-end;
-    justify-content: center;
-}
-
-.testimonial-carousel .owl-dot {
-    position: relative;
-    display: inline-block;
-    margin: 0 5px;
-    width: 15px;
-    height: 15px;
-    background: #DDDDDD;
-    border-radius: 15px;
-    transition: .5s;
-}
-
-.testimonial-carousel .owl-dot.active {
-    width: 30px;
-    background: var(--primary);
-}
-
-
-/*** Team ***/
-.team-item,
-.team-item .bg-primary,
-.team-item .bg-primary i {
-    transition: .5s;
-}
-
-.team-item:hover {
-    border-color: var(--secondary) !important;
-}
-
-.team-item:hover .bg-primary {
-    background: var(--secondary) !important;
-}
-
-.team-item:hover .bg-primary i {
-    color: var(--secondary) !important;
-}
-
-
 /*** Footer ***/
 .footer {
     background:
@@ -343,9 +255,9 @@ h6,
         url(../img/bg-line.png),
         url(../img/bg-bottom-footer.png);
     background-position:
-        0px 112px,
-        right 0 bottom 0,
-        left 50% top 80px,
+        left 0px bottom 50%,
+        right 0 bottom 50%,
+        left 40% top 45px,
         left 50% bottom 0,
         top center;
     background-repeat: no-repeat;

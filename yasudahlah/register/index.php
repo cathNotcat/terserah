@@ -43,6 +43,9 @@
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <!-- <script src="sweetalert2.all.min.js"></script> -->
 
+    <script src="//code.jquery.com/jquery-latest.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jsbarcode@3.11.5/dist/JsBarcode.all.min.js"></script>
+
     <style>
         body {
             overflow: hidden;
@@ -104,6 +107,18 @@
 
 </script>
 
+<?php
+srand(time());
+
+// Generate three random numbers and concatenate them together
+$barcodeNum = null;
+$firstPart = mt_rand(1000, 9999);
+$secondPart = mt_rand(1000, 9999);
+$thirdPart = mt_rand(1000, 9999);
+$barcodeNum = $firstPart . $secondPart . $thirdPart;
+
+?>
+
 <body>
     <div class="wrapper">
         <a href="../" class="text-primary"><i><u> &#171; kembali </u> </i> </a>
@@ -113,18 +128,20 @@
             <div class="mb-3">
                 <!-- <label class="form-label">Nama</label> -->
                 <input type="text" class="form-control" name="nama" id="nama" placeholder="Nama" required>
+                <input type="hidden" class="form-control" name="barcode" id="barcode"
+                    value="<?php echo $barcodeNum; ?>">
             </div>
 
             <div class="mb-3">
                 <!-- <label class="form-label">Tanggal Lahir</label> -->
                 <div class="input-group date" id="tglLahir">
-                    <input type="text" class="form-control" name="tanggal" id="tanggal" placeholder="Tanggal Lahir"
+                    <input type="date" class="form-control" name="tanggal" id="tanggal" placeholder="Tanggal Lahir"
                         required>
-                    <span class="input-group-append">
+                    <!-- <span class="input-group-append">
                         <span class="input-group-text bg-white d-block">
                             <i class="fa fa-calendar"></i>
                         </span>
-                    </span>
+                    </span> -->
                 </div>
 
             </div>

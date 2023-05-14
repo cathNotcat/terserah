@@ -42,6 +42,9 @@
 
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
+    <script src="//code.jquery.com/jquery-latest.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jsbarcode@3.11.5/dist/JsBarcode.all.min.js"></script>
+
     <style>
         body {
             overflow: hidden;
@@ -86,9 +89,6 @@
 </head>
 
 <body>
-    <?php
-    // include('../navbar.php');
-    ?>
     <div class="wrapper">
         <a href="../" class="text-primary"><i><u> &#171; kembali </u> </i> </a>
         <form action="loginprocess.php" method="post">
